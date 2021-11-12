@@ -1,0 +1,23 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Felipe Orellana", email = "forellana@digithinkit.com"},
+]
+dependencies = [
+    "faker~=9.8",
+]
+requires-python = ">=3.7"
+dynamic = ["classifiers"]
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+test = "python -m unittest discover -s ./tests -p *_test.py"
